@@ -1,0 +1,99 @@
+Running on local URL:  http://127.0.0.1:7862
+Running on public URL: https://bf8aae7b1248dcd506.gradio.live
+
+This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
+/raid/FC_project/LLaVA-NeXT/videos
+vecteezy_attractive-stylish-lady-speaks-on-mobile-phone-while_17461176.mov
+testpath is /raid/FC_project/LLaVA-NeXT/videos/vecteezy_attractive-stylish-lady-speaks-on-mobile-phone-while_17461176.mov
+video is /raid/FC_project/LLaVA-NeXT/videos/vecteezy_attractive-stylish-lady-speaks-on-mobile-phone-while_17461176.mov
+Overwriting config with {'mm_resampler_type': 'spatial_pool', 'mm_spatial_pool_stride': 2, 'mm_spatial_pool_out_channels': 1024, 'mm_spatial_pool_mode': 'average', 'patchify_video_feature': False, 'max_sequence_length': 8192, 'tokenizer_model_max_length': 8192}
+Time taken for inference: 22.932576894760132 seconds
+Question: <|im_start|>system
+Answer the questions.<|im_end|><|im_start|>user
+<image>
+You are a professional cinematoghrapher. Please provide a summary of the video. you need to capture some key information from it, including: 
+*) camera position: e.g. Aerial, high, low, shoulder,.etc
+*) camera movement: Is the camera is still or the camera is moving, e.g. Pan, Tilt,zoom,.etc
+*) camera moving direction: is the camera moving vertically or horizontally, or not moving
+*) camera zooming: is the camera zooming in or zooming out, or keep still
+*) what is the time: day, dawn,sunset or night
+*) main objects in the video
+*) movement of the main objects in the video
+*) if there are human in the video, how many of them, what are they doing
+*) if there are animals in the video, what animals do they have, what are the animals doing 
+give the responses in Markdown.<|im_end|><|im_start|>assistant
+
+
+Response: Sure, here's a summary of the video:
+
+* Camera position: Low angle, positioned slightly to the side of the subject.
+* Camera movement: Still, no movement.
+* Camera moving direction: Not moving.
+* Camera zooming: Not zooming, keeping a steady distance from the subject.
+* Time: Daytime.
+* Main objects in the video: A woman and a white car.
+* Movement of the main objects: The woman is standing still next to the car, talking on her phone. The car is stationary.
+* Human: There is one human in the video, a woman who is talking on her phone.
+* Animals: There are no animals in the video.
+
+Please note that this summary is based on the information provided in the image and may not be entirely accurate.
+
+llava
+Overwriting config with {'mm_resampler_type': 'spatial_pool', 'mm_spatial_pool_stride': 2, 'mm_spatial_pool_out_channels': 1024, 'mm_spatial_pool_mode': 'average', 'patchify_video_feature': False}
+Time taken for inference: 7.678788661956787 seconds
+Question: <|im_start|>system
+Answer the questions.<|im_end|><|im_start|>user
+<image>
+You are a professional cinematoghrapher. Please provide a summary of the video. you need to capture some key information from it, including: 
+*) camera position: e.g. Aerial, high, low, shoulder,.etc
+*) camera movement: Is the camera is still or the camera is moving, e.g. Pan, Tilt,zoom,.etc
+*) camera moving direction: is the camera moving vertically or horizontally, or not moving
+*) camera zooming: is the camera zooming in or zooming out, or keep still
+*) what is the time: day, dawn,sunset or night
+*) main objects in the video
+*) movement of the main objects in the video
+*) if there are human in the video, how many of them, what are they doing
+*) if there are animals in the video, what animals do they have, what are the animals doing 
+give the responses in Markdown.<|im_end|><|im_start|>assistant
+
+
+Response: Sure, here's a summary of the video:
+
+* Camera position: Low angle, positioned in front of the subject.
+* Camera movement: Still, no movement.
+* Camera moving direction: Not moving.
+* Camera zooming: Keep still.
+* Time: Daytime.
+* Main objects in the video: A woman and a white car.
+* Movement of the main objects in the video: The woman is standing still next to the car, and there is no movement from the car.
+* If there are human in the video, there is only one woman, and she is talking on her phone.
+* If there are animals in the video, there are none.
+
+llava
+Overwriting config with {'mm_resampler_type': 'spatial_pool', 'mm_spatial_pool_stride': 2, 'mm_spatial_pool_out_channels': 1024, 'mm_spatial_pool_mode': 'average', 'patchify_video_feature': False}
+Time taken for inference: 7.583162546157837 seconds
+Question: <|im_start|>system
+Answer the questions.<|im_end|><|im_start|>user
+<image>
+You are a professional cinematoghrapher. Please provide a summary of the video. you need to capture some key information from it, including: 
+*) camera position: e.g. Aerial, high, low, shoulder,.etc
+*) camera movement: Is the camera is still or the camera is moving, e.g. Pan, Tilt,zoom,.etc
+*) camera moving direction: is the camera moving vertically or horizontally, or not moving
+*) camera zooming: is the camera zooming in or zooming out, or keep still
+*) what is the time: day, dawn,sunset or night
+*) main objects in the video
+*) movement of the main objects in the video
+*) if there are human in the video, how many of them, what are they doing
+*) if there are animals in the video, what animals do they have, what are the animals doing 
+give the responses in Markdown.<|im_end|><|im_start|>assistant
+
+
+Response: Sure, here's a summary of the video in Markdown:
+
+The video captures a breathtaking view of a snow-covered mountain range. The camera position is high, providing an aerial view of the mountains. The camera movement is still, with no pan, tilt, or zoom. The time of day appears to be during the day, with clear visibility of the mountains.
+
+The main objects in the video are the snow-covered mountains, which are stationary. There are no human or animal objects in the video. The movement of the main objects is not possible, as they are stationary.
+
+Overall, the video provides a stunning view of the mountain range, showcasing the beauty of nature.
+
+llava

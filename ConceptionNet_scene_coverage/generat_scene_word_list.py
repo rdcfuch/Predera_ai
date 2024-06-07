@@ -8,6 +8,7 @@ global final_list
 final_list = []
 
 
+#this one is deprecated
 def get_all_nodes(input_keyword: str, recursive_level: int = 1,item_limit=40):
     if recursive_level != 0:
         print(f"recursive {recursive_level}, input keyword: {input_keyword}")
@@ -42,14 +43,14 @@ def get_all_related_words(input_keyword: str, input_relation: str = "RelatedTo",
     if recursive_level != 0:
         print(f"recursive {recursive_level}, input keyword: {input_keyword}")
         api_url = f"https://api.conceptnet.io/c/en/{input_keyword}?rel=/r/{input_relation}&limit={item_limit}"
+        # print(f"use url: {api_url}")
         input_json = requests.get(api_url).json()
         for edge in input_json["edges"]:
             relation_item=edge["@id"].split(",")[1]
             if 'c/en/' in relation_item:
-                print("++++++++ : ",relation_item)
                 keyword = relation_item.split("/")[3]
-                print(f"keyword: {keyword}")
-                if keyword not in final_list and len(keyword) > 1:
+                # print(f"keyword: {keyword}")
+                if keyword.replace("_", " ") not in final_list and len(keyword) > 1:
                     final_list.append(keyword.replace("_", " "))
                     get_all_related_words(input_keyword=keyword,input_relation=input_relation, recursive_level=recursive_level - 1)
 
@@ -70,11 +71,13 @@ if __name__ == "__main__":
 
     # Define the theme we want to search and the level we want to dig into recursively
     theme_name="beach"
-    dig_level=2
+    dig_level=4
     relation_list=["IsA","AtLocation","RelatedTo","HasProperty","CapableOf","Antonym","SimilarTo","UsedFor"]
+
     # get_all_nodes(theme_name, dig_level)
     final_list.append(theme_name)
     for relation_item in relation_list:
+        print(f"relation_item: {relation_item}")
         get_all_related_words(input_keyword=theme_name,input_relation=relation_item,recursive_level=dig_level)
     output_dict=get_work_frequencies_of_input_word_list(final_list)
 
