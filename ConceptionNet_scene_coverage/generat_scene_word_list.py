@@ -70,15 +70,15 @@ def get_work_frequencies_of_input_word_list(input_word_list: [])->OrderedDict:
 if __name__ == "__main__":
 
     # Define the theme we want to search and the level we want to dig into recursively
-    theme_name="beach"
-    dig_level=4
+    theme_name="waterfall"
+    dig_level=5
     relation_list=["IsA","AtLocation","RelatedTo","HasProperty","CapableOf","Antonym","SimilarTo","UsedFor"]
-
+    limit_for_each_relation=40
     # get_all_nodes(theme_name, dig_level)
     final_list.append(theme_name)
     for relation_item in relation_list:
         print(f"relation_item: {relation_item}")
-        get_all_related_words(input_keyword=theme_name,input_relation=relation_item,recursive_level=dig_level)
+        get_all_related_words(input_keyword=theme_name,input_relation=relation_item,recursive_level=dig_level,item_limit=limit_for_each_relation)
     output_dict=get_work_frequencies_of_input_word_list(final_list)
 
     with open(f"{theme_name}.json", "w") as f:
