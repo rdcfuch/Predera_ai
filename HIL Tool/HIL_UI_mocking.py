@@ -2,6 +2,7 @@ import gradio as gr
 import pandas as pd
 
 with gr.Blocks() as hil_ux:
+    title = gr.Label("HIL evaluation tool for VFM")
     with gr.Row():
         col_1=gr.Column()
         col_2=gr.Column()
