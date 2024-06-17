@@ -21,41 +21,37 @@ with gr.Blocks() as hil_ux:
         with fc_col_right:
             video_preview = gr.Video(label="Generated Video")
 
-
-    with gr.Row():
-        col_3 = gr.Column()
-        col_4 = gr.Column()
-        with col_3:
-            gr.Slider(1, 50,step=1, label="Prompt adherence metrics",interactive=True)
-        with col_4:
-            gr.Text(label="Prompt adherence comments")
-    with gr.Row():
-        col_3 = gr.Column()
-        col_4 = gr.Column()
-        with col_3:
-            gr.Slider(1, 50,step=1, label="Realism metrics",interactive=True)
-        with col_4:
-            gr.Text(label="Realism metrics comments")
-
-    with gr.Row():
-        col_3 = gr.Column()
-        col_4 = gr.Column()
-        with col_3:
-            gr.Slider(1, 50,step=1, label="Physics Accuracy ",interactive=True)
-        with col_4:
-            gr.Text(label="Physics Accuracy metrics comments")
-
-    with gr.Row():
-        col_3 = gr.Column()
-        col_4 = gr.Column()
-        with col_3:
-            gr.Slider(1, 50,step=1, label="Visual Quality(Artifacts)",interactive=True)
-        with col_4:
-            gr.Text(label="Visual Quality(Artifacts) metrics comments")
-
-    total_score=gr.Text(label="Total Score is: ")
-
-    caption_btn = gr.Button(value="Submit metrics scores")
+    with gr.Group():
+        with gr.Row():
+            col_3 = gr.Column()
+            col_4 = gr.Column()
+            with col_3:
+                gr.Slider(1, 50,step=1, label="Prompt adherence metrics",interactive=True)
+            with col_4:
+                gr.Text(label="Prompt adherence comments")
+        with gr.Row():
+            col_3 = gr.Column()
+            col_4 = gr.Column()
+            with col_3:
+                gr.Slider(1, 50,step=1, label="Realism metrics",interactive=True)
+            with col_4:
+                gr.Text(label="Realism metrics comments")
+        with gr.Row():
+            col_3 = gr.Column()
+            col_4 = gr.Column()
+            with col_3:
+                gr.Slider(1, 50,step=1, label="Physics Accuracy ",interactive=True)
+            with col_4:
+                gr.Text(label="Physics Accuracy metrics comments")
+        with gr.Row():
+            col_3 = gr.Column()
+            col_4 = gr.Column()
+            with col_3:
+                gr.Slider(1, 50,step=1, label="Visual Quality(Artifacts)",interactive=True)
+            with col_4:
+                gr.Text(label="Visual Quality(Artifacts) metrics comments")
+        total_score=gr.Label(label="Total Score is: 40")
+        submit_btn = gr.Button(value="Submit metrics scores")
 
     tc_score_list_label=gr.Label("TC score list")
     TC_and_metrics_list={'TC name':["TC1: A water fall","TC2: a car driving","TC3: A view of beach"],"Prompt Adherence":["2","4","1",],"Realism":["2","4","10"],"Physics Accuracy":["21","34","41",],"Visual Quality":["2","4","10"]}
