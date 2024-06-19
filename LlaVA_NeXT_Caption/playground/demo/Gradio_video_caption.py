@@ -432,7 +432,7 @@ with gr.Blocks() as ux_evaluator:
         fc_col_left = gr.Column()
         fc_col_right = gr.Column()
         with fc_col_left:
-            prompt = gr.TextArea(label="Prompt", value="""You are a professional cinematoghrapher. Please provide a summary of the video. you need to capture some key information from it, including: 
+            prompt = gr.TextArea(label="Prompt", value="""You are a professional cinematographer. Please provide a description of the video. you need to capture some key information from it, including: 
 *) camera position: e.g. Aerial, high, low, shoulder,.etc
 *) camera movement: Is the camera is still or the camera is moving, e.g. Pan, Tilt,zoom,.etc
 *) camera moving direction: is the camera moving vertically or horizontally, or not moving
@@ -442,7 +442,8 @@ with gr.Blocks() as ux_evaluator:
 *) movement of the main objects in the video
 *) if there are human in the video, how many of them, what are they doing
 *) if there are animals in the video, what animals do they have, what are the animals doing 
-give the responses in Markdown.""")
+*) if there is an moving object in the video, what it is, how it's moving
+summarize the description in a 100 word narrative description""")
             frames = gr.Text(label="Frames for caption", value=24)
             filepath.change(fn=update_prompt_list, inputs=filepath, outputs=file_list)
         with fc_col_right:

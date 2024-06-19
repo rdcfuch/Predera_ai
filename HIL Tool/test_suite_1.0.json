@@ -1,0 +1,76 @@
+[
+  {
+    "TC number": 1,
+    "prompt": "shot from a low angle, capturing a man and a woman jogging in a city park. The camera is stationary, focusing on the two individuals as they move horizontally across the frame. The time appears to be daytime, with clear visibility and natural lighting. The main objects in the video are the two joggers, and their movement is consistent and rhythmic. There are no other humans or animals in the video. The camera does not zoom in or out, and there are no pan or tilt movements. The overall narrative of the video is a simple yet intimate portrayal of two individuals engaging in physical activity amidst an urban landscape",
+    "sample_vide": "running-in-city.mov"
+  },
+
+{
+    "TC number": 2 ,
+    "prompt": "scene of a sleek black sports car cruising down a winding road during the day. The camera is positioned at a low angle, capturing the car's impressive design and movement as it navigates the curvy asphalt. The camera movement is fluid, following the car's path with a combination of pans and tilts, creating a sense of speed and excitement. The camera zooms in slightly to capture the car's details and then zooms out to maintain the car's position in the frame. The time of day is clear and bright, with the sun casting a warm glow on the surrounding landscape. The main object in the video is the black sports car, and its movement is smooth and confident as it takes on the road. There are no humans or animals in the video, and the focus remains solely on the car and its journey.",
+    "sample_vide": "sports-car-from-right-close-shot.mp4"
+  },
+
+  {
+    "TC number": 3,
+    "prompt": "a breathtaking aerial view of a tropical island during the day. The camera is positioned high, providing a panoramic view of the clear blue waters, white sandy beaches, and lush greenery. The camera movement is fluid, panning horizontally across the island, showcasing the natural beauty of the landscape. The camera then tilts downwards, zooming in on the island's coastline, revealing the intricate details of the shore and the clear turquoise waters. The camera movement is steady, capturing the serene atmosphere of the island. There are no human or animal activities visible in the video. The video is a stunning portrayal of the island's natural beauty, with the camera's position and movement highlighting the island's stunning landscape.",
+    "sample_vide": "test3.mov"
+  },
+
+  {
+    "TC number": 4,
+    "prompt": "a breathtaking view of a waterfall cascading into a serene, clear blue pool of water. The camera is positioned at a high angle, providing a panoramic view of the waterfall and the surrounding lush greenery. The camera movement is fluid, panning horizontally to showcase the full expanse of the waterfall and the forest in the background. The camera zooms in slightly, allowing the viewer to appreciate the details of the waterfall's mist and the tranquility of the water. The time appears to be during the day, with bright, natural light illuminating the scene. The main objects in the video are the waterfall and the forest, with no human or animal presence. The movement of the main objects is the gentle flow of the waterfall and the undisturbed water in the pool. The video provides a sense of peace and natural beauty.",
+    "sample_vide": "beautiful-erawan-waterfalls-in-a-tropical.mp4"
+  },
+
+  {
+    "TC number": 5,
+    "prompt": "a woman in a casual outfit, standing next to a white car, engaged in a phone conversation. The camera is positioned at a low angle, slightly to the side, allowing for a clear view of the woman and the car. The camera remains stationary, with no pan, tilt, or zoom movements. The time appears to be during the day, with natural light illuminating the scene. The main object in the video is the woman, and she remains stationary throughout the video, with no significant movement. The white car is also a prominent object in the frame. There are no other humans or animals in the video. The video provides a candid snapshot of a moment in the woman's day.",
+    "sample_vide": "lady-speaks-on-mobile-phone.mov"
+  },
+  {
+    "TC number": 6,
+    "prompt": "a breathtaking aerial view of a majestic mountain range blanketed in a thick layer of snow. The camera, positioned high above, provides a panoramic view of the landscape, showcasing the rugged peaks and valleys. The camera movement is fluid, panning and tilting to capture the vastness of the scene. The camera zooms out, revealing more of the mountain range, and then zooms back in, focusing on the intricate details of the snow-covered terrain. The time appears to be during the day, with clear visibility and natural lighting. The main objects in the video are the snow-covered mountains, and there are no human or animal presence in the scene. The camera movement is vertical, providing a sense of height and grandeur. The video is a stunning portrayal of the natural beauty of the mountain range.",
+    "sample_vide": "peak.mov"
+  },
+  {
+    "TC number": 7,
+    "prompt": "a breathtaking aerial view of a verdant landscape during the day. The camera, positioned high above, moves horizontally, panning across the lush greenery and towering mountains. The camera zooms out, revealing more of the expansive scenery. The sky is a clear blue, and the sun casts a warm glow over the landscape. The camera's movement is fluid, providing a seamless view of the landscape. There are no human or animal figures in the video, and the focus is solely on the natural beauty of the environment.",
+    "sample_vide": "Timelapse_of_clouds_forming.mp4"
+  },
+  {
+    "TC number": 8,
+    "prompt": "A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.",
+    "sample_vide": ""
+  },
+  {
+    "TC number": 9,
+    "prompt": "A fast-tracking shot through a bustling dystopian sprawl with bright neon signs,  flying cars and mist,  night,  lens flare,  volumetric lighting - A fast-tracking shot through a futuristic dystopian sprawl with bright neon signs,  starships in the sky,  night,  volumetric lighting - A neon hologram of a car driving at top speed,  speed of light,  cinematic,  incredible details,  volumetric lighting - The cars leave the tunnel,  back into the real world city Hong Kong",
+    "sample_vide": ""
+  },
+  {
+    "TC number": 10,
+    "prompt": "Close up shot of a living flame wisp darting through a bustling fantasy market at night.",
+    "sample_vide": ""
+  },
+  {
+    "TC number": 11,
+    "prompt": "A wide symmetrical shot of a painting in a museum. The camera zooms in close to the painting.",
+    "sample_vide": ""
+  },
+  {
+    "TC number": 12,
+    "prompt": "Subtle reflections of a woman on the window of a train moving at hyper-speed in a Japanese city.",
+    "sample_vide": "runway_1.mp4"
+  },
+  {
+    "TC number": 13,
+    "prompt": "FPV flying through a colorful coral lined streets of an underwater suburban neighborhood.\n",
+    "sample_vide": "runway_2.mp4"
+  },
+  {
+    "TC number": 14,
+    "prompt": "An extreme close-up shot of an ant emerging from its nest. The camera pulls back revealing a neighborhood beyond the hill.",
+    "sample_vide": "runway_3.mp4"
+  }
+]
