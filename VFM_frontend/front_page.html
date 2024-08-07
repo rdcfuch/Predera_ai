@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen-2 Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .prompt-container {
+            width: 100%;
+            background-color: #2D2D2D;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-area {
+            border: 2px dashed #555;
+            border-radius: 10px;
+            width: 80%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .upload-area p {
+            color: #777;
+        }
+
+        .description {
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .text-input {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .text-input input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <!-- Sidebar content (e.g., menu items) -->
+    </div>
+    <div class="main-content">
+        <div class="prompt-container">
+            <div class="upload-area" id="uploadArea">
+                <p>Drop an image or click to upload</p>
+                <input type="file" id="fileInput" style="display:none;"/>
+            </div>
+            <div class="text-input">
+                <input type="text" id="textInput" placeholder="Enter your text prompt here..."/>
+            </div>
+            <div class="description">
+                Describe your shot. Use <a href="#" style="color: #4CAF50;">Camera Control</a> and <a href="#"
+                                                                                                      style="color: #4CAF50;">Motion
+                Brush</a> for added control.
+            </div>
+            <div class="controls">
+                <div class="button" onclick="generatePreview()">Free previews</div>
+                <div class="button" onclick="generate()">Generate 4s</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="video-card">
+            <img src="path/to/thumbnail.jpg" alt="Video Thumbnail"/>
+            <h3>Video Title</h3>
+        </div>
+        <div class="video-card">
+            <img src="path/to/thumbnail.jpg" alt="Video Thumbnail"/>
+            <h3>Video Title</h3>
+        </div>
+        <!-- Add more video cards as needed -->
+    </div>
+</div>
+</div>
+
+<script>
+    document.getElementById('uploadArea').addEventListener('click', () => {
+        document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            // Handle file upload here
+            console.log('File uploaded:', file.name);
+        }
+    });
+
+    function generatePreview() {
+        const textPrompt = document.getElementById('textInput').value;
+        // Handle free preview generation here
+        console.log('Generating preview with text prompt:', textPrompt);
+    }
+
+    function generate() {
+        const textPrompt = document.getElementById('textInput').value;
+        // Handle video generation here
+        console.log('Generating video with text prompt:', textPrompt);
+    }
+</script>
+</body>
+</html>
